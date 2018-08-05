@@ -17,6 +17,7 @@ var myHouse = new Building(2);
 function collection(number) {
     this.name = "Harry Potter";
     this.items = number;
+    this.access = true;
 }
 collection.prototype.giveAccess = function (boolean) {
     return "You have access to my collection: " + boolean;
