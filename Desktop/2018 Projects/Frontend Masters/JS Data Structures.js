@@ -21,3 +21,23 @@ function collection(number) {
 collection.prototype.giveAccess = function (boolean) {
     return "You have access to my collection: " + boolean;
 }
+
+//Stacks and Queues
+
+
+
+// 2D Array
+// int[][] nums = { {1, 3, 7, 5 },
+// { 5, 8, 4, 6 },
+// { 7, 4, 2, 9 } };
+// int search = 4;
+// foundNumber:
+// for (int i = 0; i < nums.length; i++) {
+//     for (int j = 0; j < nums[i].length; j++) {
+//         if (nums[i][j] == search) {
+//             System.out.println(
+//                 "Found " + search + " at position " + i + "," + j);
+//             break foundNumber;
+//         }
+//     }
+// }
