@@ -11,3 +11,17 @@ Stack.prototype.pop = function(val){
     this.storage = this.storage.substring(0,this.storage.lastIndexOf("***"))
     return str;
 }
+
+// QUEUES- FIFO First In First Out (like a regular line a person stands in). Adding into is “enqueuing” and out is “dequeuing”
+
+function Stack(capacity){
+                this._capacity = capacity || Infinity;
+                this._storage = {};
+                this._count = 0;     }
+
+Stack.protoype.push = function(value){
+                if(this._count < this._capacity){
+                this._storage[this._count ++] = value;
+                }
+        return this._count;
+}
