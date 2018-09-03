@@ -72,3 +72,26 @@ Stack.protoype.push = function(value){
                 }
         return this._count;
 }
+
+// ------------- SECTION 3 -------------- //
+// Recursion
+// When a method calls itself. Is used to keep code “DRY”.
+// 1.  Identify Base Case
+// 2. Identify recursive cases and RETURN where appropriate
+// 3. Write procedures that bring you closer to Base Case
+Var callMyself = function() {
+	if(BASECASE){ return “something” }
+	else{ //recursive case
+		callMyself() }
+	return callMyself;
+}
+// OR
+Var callMyself= function(){
+  if(n <= 1){
+	return “complete” }
+  Else{
+	return callMyself(n-1)
+  }
+}
+callMyself(3)
+
