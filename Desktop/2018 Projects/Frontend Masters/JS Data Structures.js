@@ -95,3 +95,23 @@ Var callMyself= function(){
 }
 callMyself(3)
 
+//Factorial with loop
+function computeFactorial(){
+  var result= 1;	
+  for(let i = 2; i < 6; i++){
+    result *= i;
+  }
+	return result;
+}
+// equivalent is 5! (five factorial; 2*3*4*5)
+// To find the factorial of a given number, we need to work backward, calling the function within itself until we reach 1
+function computeFactorial(num){
+  if(num === 1){
+    return 1;	  
+  }
+  else {
+    return num * computeFactorial(num - 1); // this will eventually return "1" back up the stack  
+  }
+}
+// So, once the function has been called until it hits the base case "if" line, it will return 1, to the function that called it, the "num" in this case will = 2. 
+// That in turn will pass num (2) times the invocation of the function (computeFactorial(num-1)) --> which is 2, and then "2" is passed up
